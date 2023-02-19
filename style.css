@@ -34,11 +34,9 @@
     box-shadow: 0 0 48px 2px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     cursor: pointer;
-    margin: 32px;
-    max-height: 200px;
-    max-width: 120px;
-    transform: scale(1);
-    transition: transform 0.3s;
+    margin: 5px;
+    max-height: 150px;
+    max-width: 130px;
 }
 
 .modal__button {
@@ -60,11 +58,45 @@
 .modal__text-mein {
     color: #ff6b08;
     font-size: 42px;
-    text-shadow: 5px 3px 1px black;
+    text-shadow: 5px 3px 2px black;
     margin: 5px;
 }
 
 .modal__popup {
     background-color: #fff;
     padding: 35px;
+}
+
+.modal__card {
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+
+    &:hover {
+        transform: rotateY(180deg);
+        cursor: pointer;
+    }
+}
+
+.modal__thumbnail,
+.modal__back {
+    backface-visibility: hidden;
+    border: solid 3px #ff6b08;
+}
+
+.modal__back {
+    position: relative;
+    top: -150px;
+    left: 0px;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 48px 2px rgba(0, 0, 0, 0.5);
+    font-size: 13px;
+    padding: 16px;
+    height: 150px;
+    width: 130px;
 }
