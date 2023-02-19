@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<footer class="footer">
+    <div class="copyright">
+        <p>&copy; 2023 | All Rights Reserved |</p>
+        <p>
+            Developed with
+            <svg class="copyright__svg" id="copyright_modal">
+                <use href="./images/icons.svg#heart"></use>
+            </svg>
+            by <span class="copyright__span">GoIT Students</span>
+        </p>
+    </div>
+    <img src="/src/images/cursor-loader.gif" width="60" id="loader" class="loader" />
+    <div class="modal modal__hidden" data-modal>
+
+        <button class="modal__button" type="button" data-modal-close>
+            <svg>
+                <use xlink:href="./images/icons.svg#x" width="22px" height="22px" x="3" y="7.5"></use>
+            </svg>
+        </button>
+        <div class="modal__popup">
+            <div>
+                <div class="modal__text">
+                    <h4 class="modal__text-mein">Coding Hamster</h4>
+                    <p>Grupa projektowa 1</p>
+                </div>
+                <ul class="modal__gallery">
+                    <li class="modal__thumbnail"><img src="./images/Zbyszek.jpg" alt="Zbyszek"></li>
+                    <li class="modal__thumbnail"><img src="./images/Zbyszek.jpg" alt="Ola"></li>
+                    <li class="modal__thumbnail"><img src="./images/Zbyszek.jpg" alt="Dawid"></li>
+                    <li class="modal__thumbnail"><img src="./images/Zbyszek.jpg" alt="Asia"></li>
+                    <li class="modal__thumbnail"><img src="./images/Zbyszek.jpg" alt="Bartek"></li>
+                    <li class="modal__thumbnail"><img src="./images/Zbyszek.jpg" alt="Paweł"></li>
+                    <li class="modal__thumbnail"><img src="./images/Zbyszek.jpg" alt="Dominik"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/footerModal.js"></script>
+</footer>
+</html>
